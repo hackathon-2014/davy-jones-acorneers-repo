@@ -76,9 +76,7 @@ angular.module('starter.controllers', [])
        { title: 'FPS', id: 3 },
        { title: 'MMO', id: 4 },
        { title: 'Role Playing', id: 5 },
-       { title: 'Simulation', id: 7 },
-       { title: 'Strategy', id: 8 },
-       { title: 'Sports', id: 9 },
+       { title: 'Sports', id: 6 },
        ];
 })
 
