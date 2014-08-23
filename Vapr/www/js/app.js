@@ -134,7 +134,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           url: "/home",
           views: {
               'menuContent' :{
-                  templateUrl: "templates/home.html"
+                  templateUrl: "templates/home.html",
+                  controller: "HomeCtrl"
               }
           }
       })
@@ -143,7 +144,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           url: "/submit",
           views: {
               'menuContent' :{
-                  templateUrl: "templates/submit.html"
+                  templateUrl: "templates/submit.html",
+                  controller: "SubmitCtrl"
               }
           }
       })
