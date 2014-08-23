@@ -1,1 +1,28 @@
-/* Empty. Add your own CSS if you like */
+/* :::::/\/\/\:::::  Vapr App Styles  :::::/\/\/\::::: */
+
+body { font-family: 'Raleway', sans-serif; }
+.bar.bar-stable { height: 85px; background-color: #274D9E; position: fixed;-webkit-box-shadow: 0px 0px 8px 1px #000000; -moz-box-shadow: 0px 0px 8px 1px #000000; box-shadow: 0px 0px 8px 1px #000000; border-bottom: none; }
+.title.ng-binding { display: none; }
+.bar .button.button-icon:before, .bar .button.button-icon.icon-left:before { font-size: 55px; color: #fff; }
+.bx-wrapper { margin-top: 60px !important; margin-left: 10px !important; margin-bottom: 25px !important; }
+.bx-wrapper .bx-pager { position: absolute !important; bottom: 5px !important; }
+.bx-wrapper img { width: 100%; }
+.featured_game { float: left; border-bottom: dotted 1px #888; margin-bottom: 20px; padding-top: 20px; border-top: dotted 1px #888; }
+.index_content { margin-left: 5px; margin-right: 5px; }
+.featured_game .title { font-family: 'Raleway'; font-size: 20px; font-weight: 700; margin-left: 10px; }
+.featured_icon { width: 60px; border-radius: 50px; margin-top: 10px; border: solid 3px #274D9E; margin-left: 10px; float: left; }
+.icon_wrapper p.description { float: right; width: 75%; margin-right: 10px; font-size: 12px; margin-top: 10px; height: 80px; overflow: scroll; margin-bottom: 25px; }
+ul.additional_links { margin-top: 180px; clear: left; margin-bottom: 20px; }
+.icons_list { margin-top: 20px; float: left; width: 100%; }
+.icons_list img { margin-bottom: 20px; width: 100px; border-radius: 50px; border: 3px solid #274D9E; float: left; margin-right: 11.5%; display: block; margin-bottom: 30px; cursor: pointer; }
+.icons_list img:hover { border: solid 3px #333; opacity: .8; }
+.icons_list img.end_icon { margin-right: 0px; }
+.additional_links { clear: both; padding-top: 10px; margin-bottom: 50px; padding-bottom: 50px; }
+.link_toggle { font-weight: bold; cursor: pointer; padding: 20px 10px 20px 10px; background-color: #e3e3e3; border-left: solid 1px #777; border-right: solid 1px #777; border-top: solid 1px #777; position: relative; }
+.link_toggle:after { content: ""; width: 60px; height: 60px; background: url(/img/results_sprite.png) no-repeat; background-size: 65px; display: block; position: absolute; right: 0px; top: 0px; background-position: 0 -1px; }
+.active_link_toggle:after { background-position: 0 -70px; }
+.link_toggle.last_link { border-bottom: solid 1px #777; }
+.link_content { display: none; border: solid 1px #888; margin-bottom: -1px; padding: 15px; }
+img.logo { position: absolute; width: 33px; right: 69px; opacity: .8; }
+.logo_title { font-family: 'Audiowide', cursive; color: #f0f0f0; position: absolute; right: 20px; font-size: 31px; opacity: 1; top: 4px; text-shadow: 1px 1px 1px #ed1b2f; }
+footer { height: 100px; background-color: #888; }
