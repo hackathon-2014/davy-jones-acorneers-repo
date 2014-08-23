@@ -1,9 +1,11 @@
 <ion-view title="Submit">
   <ion-nav-buttons side="left">
+    <img class="logo" src="/img/vapor.png" />
+    <h1 class="logo_title">Vapr</h1>
     <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content class="has-header">
-    <h1>Submit A Link</h1>
+    <h1 class="submit_a_link">Submit A Link</h1>
     <form ng-submit="doSubmit()">
       <div class="list">
         <label class="item item-input">
@@ -28,20 +30,32 @@
         </label>
         <div class="list-inset ">
           <ion-list ng-repeat="tag in tags">
-            <ion-item ng-init="tag.isActive = false" ng-click="tagActive(tag)" 
+            <ion-item ng-init="tag.isActive = false" ng-click="tagActive(tag)"
             ng-model="gameData.tag.isActive" ng-class="{'buttonInactive': !tag.isActive, 'buttonActive': tag.isActive}" >
             {{tag.title}}
             </ion-item>
           </ion-list>
         </div>
-        <label class="item">
+        <label class="item submit_idea">
           <button class="button button-block button-positive" type="submit">Submit Idea</button>
         </label>
       </div>
     </form>
+
+    <footer>
+      <ul>
+        <li><img src="/img/fb_icon.png" /></li>
+        <li><img src="/img/twitter_icon.png" /></li>
+        <li><img src="/img/youtube_icon.png" /></li>
+      </ul>
+
+      <span class="created_by">2014 // Davy Jones Acorneers</span>
+    </footer>
+
   </ion-content>
 </ion-view>
-<style type="text/css"> 
+
+<style type="text/css">
   .buttonInactive {
     color:red;
   }
