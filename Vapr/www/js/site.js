@@ -14,10 +14,18 @@ var linkToggle = function() {
   });
 };
 
+var activeCategory = function() {
+
+  $('.list-inset .item').click(function() {
+    $(this).toggleClass('active_list_item');
+  });
+
+};
 
 $(document).ready(function() {
   setTimeout(function() {
     slider();
     linkToggle();
-  }, 100);
+    activeCategory();
+  }, 400);
 });
