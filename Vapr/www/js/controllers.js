@@ -44,5 +44,31 @@ angular.module('starter.controllers', [])
   ];
 })
 
+.controller('HomeCtrl', function($scope){
+  $scope.featuredGame = function(){
+    //TODO: Add code to get most rated game
+    alert('Here you will see the highest rated(featured)game')
+  }
+})
+
+.controller('SubmitCtrl', function($scope){
+  
+  
+  $scope.gameData = {};
+  $scope.doSubmit = function(){
+    console.log($scope.gameData);
+  }
+  
+  $scope.tags = [
+       { title: 'Action', id: 1 },
+       { title: 'Adventure', id: 2 },
+       { title: 'FPS', id: 3 },
+       { title: 'MMO', id: 4 },
+       { title: 'Role Playing', id: 5 },
+       { title: 'Simulation', id: 7 },
+       { title: 'Strategy', id: 8 },
+       { title: 'Sports', id: 9 },
+       ];
+})
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 });

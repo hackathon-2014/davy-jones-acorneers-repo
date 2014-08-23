@@ -3,6 +3,26 @@
     <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
   <ion-content class="has-header">
-    <h1>Submit</h1>
+    <h1>Submit A Link</h1>
+    <form ng-submit="doSubmit()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Title</span>
+          <input type="text" ng-model="gameData.Title">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Description</span>
+          <input type="text" ng-model="gameData.Description">
+        </label>
+        <label class="item item-input">
+          <ion-list ng-repeat="tag in tags" ng-click="tagSelect">
+            <ion-item>{{tag.title}}</ion-item>
+          </ion-list>
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Submit Idea</button>
+        </label>
+      </div>
+    </form>
   </ion-content>
 </ion-view>
