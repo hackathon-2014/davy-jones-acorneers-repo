@@ -164,7 +164,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           url: "/viewall",
           views: {
               'menuContent' :{
-                  templateUrl: "templates/viewall.html"
+                  templateUrl: "templates/viewall.html",
+                  controller: "ViewAllCtrl"
               }
           }
       })

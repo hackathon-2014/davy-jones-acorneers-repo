@@ -81,6 +81,15 @@ angular.module('starter.controllers', [])
        { title: 'Sports', id: 9 },
        ];
 })
+
+.controller('ViewAllCtrl', function($scope){
+  var data = angular.fromJson(window.localStorage['gamesPost']);
+  $scope.games=data['game'];
+  console.log(data['game']);
+  
+  
+})
+
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 
     });
