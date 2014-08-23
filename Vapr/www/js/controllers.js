@@ -3,6 +3,7 @@ angular.module('starter.controllers', [])
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
   // Form data for the login modal
   $scope.loginData = {};
+  $scope.commentData = {};
 
   // Create the login modal that we will use later
   $ionicModal.fromTemplateUrl('templates/login.html', {
@@ -15,6 +16,12 @@ angular.module('starter.controllers', [])
         scope: $scope
     }).then(function(modal) {
         $scope.crowdsourceModal = modal;
+    });
+
+    $ionicModal.fromTemplateUrl('templates/comment.html', {
+        scope: $scope
+    }).then(function(modal) {
+        $scope.commentModal = modal;
     });
 
     $ionicModal.fromTemplateUrl('templates/share.html', {
@@ -50,6 +57,14 @@ angular.module('starter.controllers', [])
     $scope.share = function() {
         $scope.shareModal.show();
     };
+
+        $scope.closeComment = function() {
+            $scope.commentModal.hide();
+        };
+
+        $scope.comment = function() {
+            $scope.commentModal.show();
+        };
 
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
@@ -89,6 +104,8 @@ angular.module('starter.controllers', [])
     //get Maxid and make it your new game id
     //add comment and max comment # to new list
     //add that to unserialized gamesPost json
+
+
     
     var data = angular.fromJson(window.localStorage['gamesPost']);
     var json =angular.toJson($scope.gameData);

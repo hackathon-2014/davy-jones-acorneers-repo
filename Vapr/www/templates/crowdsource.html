@@ -6,7 +6,19 @@
         </div>
     </ion-header-bar>
     <ion-content>
-
+        <form ng-submit="doSubmit()">
+        <div class="list">
+            <label class="item item-input">
+                <input type="text" placeholder="Name">
+            </label>
+            <label class="item item-input">
+                <textarea placeholder="Comment"></textarea>
+            </label>
+            <label class="item">
+                <button class="button button-block button-positive" type="submit">Submit</button>
+            </label>
+        </div>
+        </form>
         This is the Crowdsource Page
 
     </ion-content>
