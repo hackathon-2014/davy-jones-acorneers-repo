@@ -11,6 +11,18 @@ angular.module('starter.controllers', [])
     $scope.modal = modal;
   });
 
+    $ionicModal.fromTemplateUrl('templates/crowdsource.html', {
+        scope: $scope
+    }).then(function(modal) {
+        $scope.crowdsourceModal = modal;
+    });
+
+    $ionicModal.fromTemplateUrl('templates/share.html', {
+        scope: $scope
+    }).then(function(modal) {
+        $scope.shareModal = modal;
+    });
+
   // Triggered in the login modal to close it
   $scope.closeLogin = function() {
     $scope.modal.hide();
@@ -20,6 +32,24 @@ angular.module('starter.controllers', [])
   $scope.login = function() {
     $scope.modal.show();
   };
+
+
+    $scope.closeCrowdsource = function() {
+        $scope.crowdsourceModal.hide();
+    };
+
+    $scope.crowdsource = function() {
+        $scope.crowdsourceModal.show();
+    };
+
+
+    $scope.closeShare = function() {
+        $scope.shareModal.hide();
+    };
+
+    $scope.share = function() {
+        $scope.shareModal.show();
+    };
 
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
