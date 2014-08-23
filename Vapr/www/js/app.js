@@ -30,15 +30,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       controller: 'AppCtrl'
     })
 
-    .state('app.search', {
-      url: "/search",
-      views: {
-        'menuContent' :{
-          templateUrl: "templates/search.html"
-        }
-      }
-    })
-
     .state('app.browse', {
       url: "/browse",
       views: {
@@ -47,6 +38,47 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+      .state('app.home', {
+          url: "/home",
+          views: {
+              'menuContent' :{
+                  templateUrl: "templates/home.html"
+              }
+          }
+      })
+
+      .state('app.submit', {
+          url: "/submit",
+          views: {
+              'menuContent' :{
+                  templateUrl: "templates/submit.html"
+              }
+          }
+      })
+      .state('app.crowdsource', {
+          url: "/crowdsource",
+          views: {
+              'menuContent' :{
+                  templateUrl: "templates/crowdsource.html"
+              }
+          }
+      })
+      .state('app.idea', {
+          url: "/idea",
+          views: {
+              'menuContent' :{
+                  templateUrl: "templates/idea.html"
+              }
+          }
+      })
+      .state('app.viewall', {
+          url: "/viewall",
+          views: {
+              'menuContent' :{
+                  templateUrl: "templates/viewall.html"
+              }
+          }
+      })
     .state('app.playlists', {
       url: "/playlists",
       views: {
@@ -67,6 +99,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/home');
 });
 
