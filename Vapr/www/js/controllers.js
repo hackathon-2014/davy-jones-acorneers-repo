@@ -58,6 +58,10 @@ angular.module('starter.controllers', [])
   $scope.doSubmit = function(){
     console.log($scope.gameData);
   }
+  $scope.tagActive = function(tag){
+    tag.isActive = !tag.isActive; 
+    $scope.gameData.isActive += '|' + tag.id;
+  }
   
   $scope.tags = [
        { title: 'Action', id: 1 },
