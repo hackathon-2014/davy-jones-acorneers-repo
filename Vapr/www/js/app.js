@@ -19,7 +19,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }
 
       var gamesPost = {
-          "game" : [
+          "game" :  {1 :
                   {
               Title : 'Younger Scrolls',
               Description : 'Younger Scrolls is a role-playing game (RPG) that incorporates open-ended ' +
@@ -51,7 +51,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                   GitHub : 'https://github.com/BrianAcorn',
                   CommentsNumber : 6
               },
-              {
+              2 : {
                   Title : 'Sportal',
                   Description : 'In Sportal, the player controls the protagonist Chello, , from a first-person' +
                       ' perspective as he is challenged to navigate through a series of rooms using a Sportal' +
@@ -77,7 +77,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                   GitHub : 'https://github.com/xRYANx',
                   CommentsNumber : 3
               },
-              {
+              3 : {
                   Title : 'Crane Simulator 2025',
                   Description : 'Crains are certainly one of the most complicated systems across the ' +
                       'globe and Crane Simulator 2014 brings just that to your computer screen in high' +
@@ -101,15 +101,10 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                   GitHub : 'https://github.com/RonakR',
                   CommentsNumber : 5
               }
-          ],
-          "maxId" : [
-              {
-                  MaxId : 3
-              }
-          ]
+          },
+          "maxId" : 3
           };
          window.localStorage['gamesPost'] = JSON.stringify(gamesPost);
-         var gamesPost = JSON.parse(window.localStorage['gamesPost'] || '{}');
     });
 })
 .config(function($stateProvider, $urlRouterProvider) {
@@ -169,7 +164,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           url: "/viewall",
           views: {
               'menuContent' :{
-                  templateUrl: "templates/viewall.html"
+                  templateUrl: "templates/viewall.html",
+                  controller: "ViewAllCtrl"
               }
           }
       })

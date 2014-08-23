@@ -56,7 +56,14 @@ angular.module('starter.controllers', [])
   
   $scope.gameData = {};
   $scope.doSubmit = function(){
+    //get Maxid and make it your new game id
+    //add comment and max comment # to new list
+    //add that to unserialized gamesPost json
+    
+    var data = angular.fromJson(window.localStorage['gamesPost']);
+    var json =angular.toJson($scope.gameData);
     console.log($scope.gameData);
+    console.log(data);
   }
   $scope.tagActive = function(tag){
     tag.isActive = !tag.isActive; 
@@ -74,6 +81,15 @@ angular.module('starter.controllers', [])
        { title: 'Sports', id: 9 },
        ];
 })
+
+.controller('ViewAllCtrl', function($scope){
+  var data = angular.fromJson(window.localStorage['gamesPost']);
+  $scope.games=data['game'];
+  console.log(data['game']);
+  
+  
+})
+
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 
     });
