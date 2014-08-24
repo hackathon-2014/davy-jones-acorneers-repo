@@ -75,6 +75,9 @@ angular.module('starter.controllers', [])
 })
 
 .controller('HomeCtrl', function($scope){
+  var data = angular.fromJson(window.localStorage['gamesPost']);
+    var game = data['game'][1];
+    $scope.game = game;
   $scope.featuredGame = function(){
     //TODO: Add code to get most rated game
     
@@ -96,8 +99,9 @@ angular.module('starter.controllers', [])
     
     var data = angular.fromJson(window.localStorage['gamesPost']);
     var json =angular.toJson($scope.gameData);
-    console.log($scope.gameData);
-    console.log(data);
+    
+    var data;
+    
   }
   $scope.tagActive = function(tag){
     tag.isActive = !tag.isActive; 
