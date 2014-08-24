@@ -77,7 +77,11 @@ angular.module('starter.controllers', [])
 .controller('HomeCtrl', function($scope){
   $scope.featuredGame = function(){
     //TODO: Add code to get most rated game
-    alert('Here you will see the highest rated(featured)game')
+    
+    var data = angular.fromJson(window.localStorage['gamesPost']);
+    var game = data['game'][1];
+    $scope.game = game;
+    console.log(game);
   }
 })
 

@@ -21,17 +21,17 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       var gamesPost = {
           "game" :  {1 :
                   {
-              Title : 'Younger Scrolls',
-              Description : 'Younger Scrolls is a role-playing game (RPG) that incorporates open-ended ' +
-                  'gameplay. The player can follow side-quests, interact with NPCs, dispatch ' +
+              title : 'Younger Scrolls',
+              description : 'Younger Scrolls is a role-playing game (RPG) that incorporates open-ended ' +
+                 'gameplay. The player can follow side-quests, interact with NPCs, dispatch ' +
                   'monsters, develop their character, and travel anywhere in the province of ' +
                   'Krogadiil at any time while playing the game (provided the areas are not quest-specific' +
                   ' and otherwise inaccessible when not questing).The game never ends, and the player can ' +
                   'continue playing after completing the main quest. The gameplay includes a "fast travel" ' +
                   'system, in which an icon appears on the game world map every time the player visits a new location.',
-              Tag : 5,
-              Stars : '5',
-                  "Comments" : [{
+              tag : 5,
+              stars : '5',
+                  "comments" : [{
                       1 : 'This is a wonderful idea for a game, and in need right now' +
                           'I have played many RPG games and they always fall flat in some area.' +
                           'From what I have read in the description, this game covers all the bases.',
@@ -46,14 +46,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                           'then whats the point'
                           }
                           ],
-                  GameId : 1,
-                  Twitter : 'https://twitter.com/da_nations',
-                  GitHub : 'https://github.com/BrianAcorn',
-                  CommentsNumber : 6
+                  twitter : 'https://twitter.com/da_nations',
+                  github : 'https://github.com/BrianAcorn',
+                  commentsNumber : 6,
+                  img : '1'
               },
               2 : {
-                  Title : 'Sportal',
-                  Description : 'In Sportal, the player controls the protagonist Chello, , from a first-person' +
+                  title : 'Sportal',
+                  description : 'In Sportal, the player controls the protagonist Chello, , from a first-person' +
                       ' perspective as he is challenged to navigate through a series of rooms using a Sportal' +
                       ' gun. The sportal gun can create two distinct' +
                       ' sportal ends, orange and blue. The sportals create a visual and physical connection between' +
@@ -61,9 +61,9 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                       ' or exit; all objects that travel through one sportal will exit through the other. An important' +
                       ' aspect of the games physics is momentum redirection. As moving objects pass through' +
                       ' sportals, they come through the exit portal at the same direction as the exit portal is facing',
-                  Tag : 2,
-                  Stars : 5,
-                  "Comments" : [{
+                  tag : 2,
+                  stars : 3,
+                  "comments" : [{
                       1 : 'What is a sportal? I understand the concept, but you might want to come up with a better name',
                       2 : 'This sounds like an awesome idea for a game. I would definitely buy it. I would think that the' +
                           ' physics for this would be difficult, but the payoff would be a truly unique experience. I\'m' +
@@ -72,20 +72,20 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                           'developed. I gave it 5 Stars!'
                   }
                   ],
-                  GameId : 2,
-                  Twitter : 'https://twitter.com/RyanBarrineau',
-                  GitHub : 'https://github.com/xRYANx',
-                  CommentsNumber : 3
+                  twitter : 'https://twitter.com/RyanBarrineau',
+                  github : 'https://github.com/xRYANx',
+                  commentsNumber : 3,
+                  img : "2"
               },
               3 : {
-                  Title : 'Crane Simulator 2025',
-                  Description : 'Crains are certainly one of the most complicated systems across the ' +
+                  title : 'Crane Simulator 2025',
+                  description : 'Crains are certainly one of the most complicated systems across the ' +
                       'globe and Crane Simulator 2014 brings just that to your computer screen in high' +
                       ' resolution visuals and loads of cranes. To deliver an authentic experience, you’ll be presented with ' +
                       'cranes that are based on real-world ones. They comprise of the London-Faversham, Donner Pass and Hamburg-Hanover.',
-                  Tag : 7,
-                  Stars : 1,
-                  "Comments" : [{
+                  tag : 7,
+                  stars : 1,
+                  "comments" : [{
                       1 : 'To say that this is an awful idea for a game would be a gross understatement. Do not develop' +
                           ' this game or you will go bankrupt',
                       2 : 'I work on a crane all day long and let me just say, it is the most boring job in the world.',
@@ -96,10 +96,10 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                       5 : 'Train simulators are fun and I would like to be able to use the Crane simulator to '
                   }
                   ],
-                  GameId : 3,
-                  Twitter : 'https://twitter.com/cyborgatheart',
-                  GitHub : 'https://github.com/RonakR',
-                  CommentsNumber : 5
+                  twitter : 'https://twitter.com/cyborgatheart',
+                  github : 'https://github.com/RonakR',
+                  commentsNumber : 5,
+                  img: "3"
               }
           },
           "maxId" : 3
