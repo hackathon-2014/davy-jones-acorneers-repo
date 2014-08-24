@@ -38,6 +38,9 @@
             </ion-item>
           </ion-list>
         </div>
+        <ion-list ng-repeat="image in images">
+          <ion-item><img src="img/{{image.title}}.jpg"></img></ion-item>
+        </ion-list>
         <label class="item submit_idea">
           <button class="button button-block button-positive" type="submit">Submit Idea</button>
         </label>
