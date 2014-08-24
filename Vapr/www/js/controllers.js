@@ -84,7 +84,6 @@ angular.module('starter.controllers', [])
     var data = angular.fromJson(window.localStorage['gamesPost']);
     var game = data['game'][1];
     $scope.game = game;
-    console.log(game);
   }
 })
 
@@ -99,7 +98,7 @@ angular.module('starter.controllers', [])
     
     var data = angular.fromJson(window.localStorage['gamesPost']);
     var json =angular.toJson($scope.gameData);
-    
+    alert(data[maxId]);
     var data;
     
   }
