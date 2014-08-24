@@ -2,7 +2,7 @@
 
 <ion-view title="Submit">
   <ion-nav-buttons side="left">
-    <img class="logo" src="/img/vapor.png" />
+    <img class="logo" src="img/vapor.png" />
     <h1 class="logo_title">Vapr</h1>
     <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
@@ -38,6 +38,9 @@
             </ion-item>
           </ion-list>
         </div>
+        <ion-list ng-repeat="image in images">
+          <ion-item><img src="img/{{image.title}}.jpg"></img></ion-item>
+        </ion-list>
         <label class="item submit_idea">
           <button class="button button-block button-positive" type="submit">Submit Idea</button>
         </label>
@@ -46,9 +49,9 @@
 
     <footer>
       <ul>
-        <li><img src="/img/fb_icon.png" /></li>
-        <li><img src="/img/twitter_icon.png" /></li>
-        <li><img src="/img/youtube_icon.png" /></li>
+        <li><img src="img/fb_icon.png" /></li>
+        <li><img src="img/twitter_icon.png" /></li>
+        <li><img src="img/youtube_icon.png" /></li>
       </ul>
 
       <span class="created_by">2014 // Davy Jones Acorneers</span>
